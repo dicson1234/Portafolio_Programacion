@@ -206,16 +206,6 @@ Me ha impresionado tu trabajo y me gustaría conectar contigo...
         console.log('✨ Cada detalle fue pensado para una UX increíble');
     }
 
-    actualizarAnoActual() {
-        const mensajePie = document.querySelector('.mensaje-pie');
-        const anoActual = new Date().getFullYear();
-        
-        if (mensajePie) {
-            mensajePie.innerHTML = `Hecho con cariño y esfuerzo por Dicson • 2025 ${anoActual}`;
-        }
-    }
-}
-
 // Funciones de utilidad adicionales
 class UtilsPortfolio {
     static agregarEfectoParallax() {
@@ -288,3 +278,4 @@ window.addEventListener('beforeunload', () => {
     document.removeEventListener('scroll', () => {});
 
 });
+
