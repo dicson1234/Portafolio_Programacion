@@ -211,7 +211,7 @@ Me ha impresionado tu trabajo y me gustaría conectar contigo...
         const anoActual = new Date().getFullYear();
         
         if (mensajePie) {
-            mensajePie.innerHTML = `Hecho con ❤️ y mucho café por Tu Nombre • ${anoActual}`;
+            mensajePie.innerHTML = `Hecho con cariño y esfuerzo por Dicson • 2025 ${anoActual}`;
         }
     }
 }
@@ -286,4 +286,5 @@ window.addEventListener('error', (e) => {
 window.addEventListener('beforeunload', () => {
     // Limpiar event listeners y timers si es necesario
     document.removeEventListener('scroll', () => {});
+
 });
