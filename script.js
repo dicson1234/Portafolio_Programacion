@@ -206,6 +206,8 @@ Me ha impresionado tu trabajo y me gustaría conectar contigo...
         console.log('✨ Cada detalle fue pensado para una UX increíble');
     }
 
+}
+
 // Funciones de utilidad adicionales
 class UtilsPortfolio {
     static agregarEfectoParallax() {
@@ -245,11 +247,7 @@ class UtilsPortfolio {
             );
         };
 
-        // Recuperar tema guardado
-        const temaSaved = localStorage.getItem('tema');
-        if (temaSaved === 'oscuro') {
-            document.body.classList.add('tema-oscuro');
-        }
+       
 
         // Agregar botón de tema si existe
         const botonTema = document.getElementById('toggleTema');
@@ -276,6 +274,5 @@ window.addEventListener('error', (e) => {
 window.addEventListener('beforeunload', () => {
     // Limpiar event listeners y timers si es necesario
     document.removeEventListener('scroll', () => {});
-
 });
 
